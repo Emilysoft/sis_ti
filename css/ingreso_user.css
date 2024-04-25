@@ -27,5 +27,35 @@ body{
     color: #c63b68;
 }
 
+.row
+{
+    margin-top: 15px;
+}
 
+.div_input {
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
+.label_g
+{
+    font-family: 'roboto', sans-serif;
+    font-size: 20px;
+    color: #c63b68;
+}
+
+input[type=text]:focus{
+    border: 3px solid #c63b68;
+    background-color: #222;
+    color: #c63b68;
+    font-family: 'roboto', sans-serif;
+    font-size: 20px;
+}
+
+.input_ingreso
+{
+    background-color: #222;
+    color: #c63b68;
+    font-family: 'roboto', sans-serif;
+    font-size: 20px;
+}

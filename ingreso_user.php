@@ -23,32 +23,31 @@
 
     <div class="row">
         <div class="col-md-2"></div>
-        <div class="form-group col-md-8">
-            <div class="row">
+        <div class="form-group col-md-8 div_input ">
+
                 <form action="" method="post">
 
-                    <div class="input-group">
-                        <label for="user_name">Nombre de Usuario</label>
-                        <input type="text" name="user_name" placeholder="Nombre de Usuario" id="user_name" required>
+                    <div class="input-group mb-3">
+                        <label for="user_name" class="form-label label_g">Nombre de Usuario</label>
+                        <input type="text" name="user_name" class="input_ingreso" placeholder="Nombre de Usuario" id="user_name" required>
                     </div>
 
-                    <div class="input-group">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" placeholder="Nombre" id="nombre" required>
+                    <div class="input-group mb-3">
+                        <label for="nombre" class="form-label label_g">Nombre</label>
+                        <input type="text" name="nombre" class="input_ingreso" placeholder="Nombre" id="nombre" required>
                     </div>
 
-                    <div class="input-group">
-                        <label for="apellido">Apellido</label>
-                        <input type="text" name="apellido" placeholder="Apellido" id="apellido" required>
+                    <div class="input-group mb-3">
+                        <label for="apellido" class="form-label label_g">Apellido</label>
+                        <input type="text" name="apellido" class="input_ingreso" placeholder="Apellido" id="apellido" required>
                     </div>
 
-                    <div class="input-group">
-                        <label for="password">Contraseña</label>
-                        <input type="password" name="password" placeholder="Contraseña" id="contraseña" required>
+                    <div class="input-group mb-3">
+                        <label for="password" class="form-label label_g">Contraseña</label>
+                        <input type="password" name="password" class="input_ingreso" placeholder="Contraseña" id="contraseña" required>
                     </div>
 
                 </form>
-            </div>
         </div>
         <div class="col-md-2"></div>
     </div>
