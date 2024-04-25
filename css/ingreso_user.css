@@ -1,0 +1,31 @@
+
+/*
+Recordatorio
+
+clases con .
+id con #
+
+ */
+
+
+body{
+    background-color: #222;
+}
+
+.div_header
+{
+    border-bottom: solid 3px;
+    border-color: #c63b68;
+
+}
+
+.titulo
+{
+    font-family: 'roboto', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #c63b68;
+}
+
+
+
