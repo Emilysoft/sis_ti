@@ -36,7 +36,6 @@
                         <input type="email" class="form-control" placeholder="Email" name="email" id="email" required>
                         <label for="password" class="form-label">Contraseña</label>
                         <input type="password" class="form-control"  placeholder="contraseña" name="password" id="password" required>
-
                         <input type="submit"  class="btn btn-success btnguardar" value="guardar">
 
                 </div>
