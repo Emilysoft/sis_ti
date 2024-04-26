@@ -21,21 +21,13 @@
      <div class="row">
          <div class="col-md-2"></div>
         <div class="container col-md-8">
-            <a href="ingreso_user.php" class="btn btn-success">crear usuario</a>
+            <a href="usuario/ingreso_usuario.php" class="btn btn-success">crear usuario</a>
             <a href="#" class="btn btn-danger">crear ticket</a>
             <a href="#" class="btn btn-warning">mantenedor de ticket</a>
             <a href="#" class="btn btn-default">otro</a>
         </div>
          <div class="col-md-2"></div>
      </div>
-
-
-
-
-
-
-
-
 
 
 </body>
