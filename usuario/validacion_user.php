@@ -10,6 +10,7 @@
 <body>
 
 <h1>Registro realizado satisfactoriamente</h1>
+<h4>Este es una pantalla de prueba</h4>
 <a href="../init.php"></a>
 </body>
 </html>

@@ -15,14 +15,14 @@
 
 <div class="div_header page-header">
     <div class="row">
-        <div class="col-md-4"></div>
+        <div class="col-md-3"></div>
         <div class="col-md-6 text-center"><h1 class="titulo">INGRESO DE USUARIO </h1></div>
-        <div class="col-md-4"></div>
+        <div class="col-md-3"></div>
     </div>
 </div>
 
     <div class="row">
-        <div class="col-md-4"></div>
+        <div class="col-md-3"></div>
         <div class="col-md-6">
             <form action="usuario_p.php" method="post">
                 <div class="row">
@@ -41,7 +41,7 @@
                 </div>
             </form>
         </div>
-        <div class="col-md-4"></div>
+        <div class="col-md-3"></div>
     </div>
 
 

@@ -7,13 +7,14 @@
     $lastname = $_POST['apellido'];
     $email = $_POST['email'];
     $password = $_POST['password'];
+    $tipo_usuario = 1;
     $estado = 1;
 
     try{
 
-    $insert='INSERT INTO usuario VALUES (null, :username, :nombre, :apellido, :email, :password, :estado)';
+    $insert='INSERT INTO usuario VALUES (null, :username, :nombre, :apellido, :email, :password, :tipo_usuario, :estado)';
     $sentencia = $conexion->prepare($insert);
-    $sentencia->execute(array(':username'=>$username,':nombre'=>$name,':apellido'=>$lastname,':email'=>$email,':password'=>$password,':estado'=>$estado));
+    $sentencia->execute(array(':username'=>$username,':nombre'=>$name,':apellido'=>$lastname,':email'=>$email,':password'=>$password, ':tipo_usuario'=>$tipo_usuario ,':estado'=>$estado));
 
 
 
@@ -30,13 +31,13 @@
     }else
     {
 
-        header("location: validacion_user.php");
+        header("location: usuarios.php");
 
     }
 
 
 // estados = 0 -> incativo 1-> activo pendiente de validacion 2->activo y validado 3-> baneado
-
+// tipo_usurio = 1 -> user normal 2-> administrador
 
 
 

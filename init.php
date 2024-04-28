@@ -23,8 +23,8 @@
         <div class="container col-md-8">
             <a href="usuario/registro_usuario.php" class="btn btn-success">crear usuario</a>
             <a href="ticket/ingreso_ticket.php" class="btn btn-danger">Nuevo ticket</a>
-            <a href="#" class="btn btn-warning">mantenedor de ticket</a>
-            <a href="#" class="btn btn-default">otro</a>
+            <a href="usuario/usuarios.php" class="btn btn-warning">Mantenedor de usuarios</a>
+            <a href="#" class="btn btn-default">boton sin uso</a>
         </div>
          <div class="col-md-2"></div>
      </div>
