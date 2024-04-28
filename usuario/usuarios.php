@@ -49,9 +49,9 @@ $resultado->execute();
                 <td>Estado</td>
                 <td>Accion</td>
             </tr>
-        </thead>
-            <?php foreach ($resultado as $row)  {   ?>
+        </thead>            
         <tbody>
+            <?php foreach ($resultado as $row)  {   ?>
             <tr>
                 <td><?php echo $row['id_user']   ?></td>
                 <td><?php echo $row['username']   ?></td>
