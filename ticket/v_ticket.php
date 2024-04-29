@@ -1,6 +1,6 @@
 <?php
 require_once ('../conect/conexion.php');
-$consulta ='SELECT * FROM usuario';
+$consulta ='SELECT * FROM ticket';
 $resultado = $conexion->prepare($consulta);
 $resultado->execute();
 ?>
@@ -30,45 +30,42 @@ $resultado->execute();
         });
     </script>
 
-    <title>Usuarios</title>
+    <title>Ticket</title>
 </head>
 <body>
 <div class="jumbotron">
-    <h1>Lista de Usuarios</h1>
+    <h1>Lista de Tickets</h1>
 </div>
 <a href="../init.php" class="btn btn-success">Volver</a>
 <div class="container">
     <table id="example" name="usuarios" class="display table table-striped" cellspacing="0" width="100%">
         <thead>
-            <tr class="active">
-                <td>id usuario</td>
-                <td>username</td>
-                <td>Nombre</td>
-                <td>Apellido</td>
-                <td>Email</td>
-                <td>Tipo Usuario</td>
-                <td>Estado</td>
-                <td>Accion</td>
-            </tr>
+        <tr class="active">
+            <td>id ticket</td>
+            <td>id usuario</td> <!-- Cambiar por el nombre del usuario -->
+            <td>Numero Ticket</td>
+            <td>prioridad</td>
+            <td>estado</td>
+            <td></td>
+        </tr>
         </thead>
-            <?php foreach ($resultado as $row)  {   ?>
+        <?php foreach ($resultado as $row)  {   ?>
         <tbody>
-            <tr>
-                <td><?php echo $row['id_user']   ?></td>
-                <td><?php echo $row['username']   ?></td>
-                <td><?php echo $row['nombre']  ?></td>
-                <td><?php echo $row['apellido']   ?></td>
-                <td><?php echo $row['email']   ?></td>
-                <td><?php echo $row['tipo_usuario']   ?></td>
-                <td><?php echo $row['estado']   ?></td>
-                <td><a href="#" class="btn btn-danger">Eliminar</a></td>
-            </tr><?php } ?>
+        <tr>
+            <td><?php echo $row['id_ticket']   ?></td>
+            <td><?php echo $row['id_user']   ?></td>
+            <td><?php echo $row['n_ticket']  ?></td>
+            <td><?php echo $row['prioridad']   ?></td>
+            <td><?php echo $row['estado']   ?></td>
+            <td><a href="#" class="btn btn-success">Detalle</a></td>
+        </tr><?php } ?>
         </tbody>
     </table>
 </div>
 
 </body>
 </html>
+
 
 
 
