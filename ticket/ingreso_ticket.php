@@ -24,7 +24,7 @@
 <div class="row">
     <div class="col-md-3"></div>
     <div class="col-md-6">
-        <form action="ingreso_ticket_p.php" method="post">
+        <form action="ingreso_ticket_p.php" method="post" enctype="multipart/form-data">
             <div class="row">
                 <div class="mb-3">
                     <label for="incidencia" class="form-label">Incidencia</label>

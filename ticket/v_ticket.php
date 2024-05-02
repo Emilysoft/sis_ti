@@ -33,10 +33,22 @@ $resultado->execute();
     <title>Ticket</title>
 </head>
 <body>
-<div class="jumbotron">
-    <h1>Lista de Tickets</h1>
+
+
+
+
+<div class="div_header page-header">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 text-center"><h1 class="titulo">LISTADO DE TICKET </h1></div>
+        <div class="col-md-3"></div>
+    </div>
 </div>
-<a href="../init.php" class="btn btn-success">Volver</a>
+
+
+
+
+
 <div class="container">
     <table id="example" name="usuarios" class="display table table-striped" cellspacing="0" width="100%">
         <thead>
@@ -49,20 +61,20 @@ $resultado->execute();
             <td></td>
         </tr>
         </thead>
-        <?php foreach ($resultado as $row)  {   ?>
         <tbody>
+        <?php foreach ($resultado as $row)  {   ?>
         <tr>
             <td><?php echo $row['id_ticket']   ?></td>
             <td><?php echo $row['id_user']   ?></td>
             <td><?php echo $row['n_ticket']  ?></td>
             <td><?php echo $row['prioridad']   ?></td>
             <td><?php echo $row['estado']   ?></td>
-            <td><a href="#" class="btn btn-success">Detalle</a></td>
+            <td><a href="t_detalle.php?id=<?php echo $row['id_ticket']?>" class="btn btn-success">Detalle</a></td>
         </tr><?php } ?>
         </tbody>
     </table>
 </div>
-
+<a href="../init.php" class="btn btn-success">Volver</a>
 </body>
 </html>
 

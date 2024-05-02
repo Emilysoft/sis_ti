@@ -6,7 +6,7 @@ $password="root";
 
 try {
     $conexion = new pdo("mysql:host=$server;dbname=$db", $user, $password);
-    echo "conectado";
+  //  echo "conectado";
 }
 catch (PDOException $e) {
     print "Error!: " . $e->getMessage() . "<br/>";
