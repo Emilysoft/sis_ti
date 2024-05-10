@@ -2,7 +2,7 @@
 $server="localhost";
 $db="sis_ti";
 $user="root";
-$password="root";
+$password="";
 
 try {
     $conexion = new pdo("mysql:host=$server;dbname=$db", $user, $password);

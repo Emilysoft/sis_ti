@@ -13,13 +13,18 @@ $url_target = str_replace("\\", "/", $url_insert) . '/' .$img;
 
 if(!file_exists($url_insert)){
     mkdir($url_insert, 0777, true);
-
 };
 
 if(move_uploaded_file($url_temp, $url_target)){
     echo "El archivo" . htmlspecialchars(basename($img)) . " ha sido subido correctamente";
+
 }else{
-    echo "Ha ocurrido un error";
+    //echo "Ha ocurrido un error";
+
+    var_dump($url_temp);
+    echo " ";
+    var_dump($url_target);
+
 }
 $img2= $url_target;
 // ****************************************************
@@ -41,13 +46,12 @@ if(!$sentencia)
     echo "Tu wa no funciona bruto";
 } else
 {
-    echo "uwu";
 
-    echo $id_usuario;
-    echo $incidencia;
-    echo $img;
-    echo $prioridad;
-    echo $estado;
+    //echo $id_usuario;
+    //echo $incidencia;
+    //echo $img;
+    //echo $prioridad;
+    //echo $estado;
 
 
 
