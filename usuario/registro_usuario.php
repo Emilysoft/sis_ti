@@ -26,7 +26,7 @@
         <div class="col-md-6">
             <form action="usuario_p.php" method="post">
                 <div class="row">
-                        <label for="username" class="form-label">Nombre de Usuario</label>
+                        <label for="username" class="form-label label">Nombre de Usuario</label>
                         <input type="text" class="form-control" name="username" id="username" placeholder="Nombre de usuario" required>
                         <label for="nombre" class="form-label">Nombre</label>
                         <input type="text" class="form-control" placeholder="Nombre" name="nombre" id="nombre" required>
