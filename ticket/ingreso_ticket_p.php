@@ -19,11 +19,8 @@ if(move_uploaded_file($url_temp, $url_target)){
     echo "El archivo" . htmlspecialchars(basename($img)) . " ha sido subido correctamente";
 
 }else{
-    //echo "Ha ocurrido un error";
 
-    var_dump($url_temp);
-    echo " ";
-    var_dump($url_target);
+    echo "Ha ocurrido un error";
 
 }
 $img2= $url_target;
@@ -46,14 +43,7 @@ if(!$sentencia)
     echo "Tu wa no funciona bruto";
 } else
 {
-
-    //echo $id_usuario;
-    //echo $incidencia;
-    //echo $img;
-    //echo $prioridad;
-    //echo $estado;
-
-
+    header("location: ../init.php");
 
 }
 

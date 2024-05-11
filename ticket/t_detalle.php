@@ -85,9 +85,10 @@ $resultado2 = $proceso2->fetch();
 
                 <?php
                 $url = $resultado["img"];
-               // $nuevaurl = str_replace("/Applications/MAMP/htdocs/","http://localhost:8888/",$url);
-                $nuevaurl = str_replace("/opt/lampp/htdocs/","http://localhost:80/",$url);
-
+                // Usar el de abajo solo cuando se prueba en Mac
+                   $nuevaurl = str_replace("/Applications/MAMP/htdocs/","http://localhost:8888/",$url);
+                // $nuevaurl = str_replace("/opt/lampp/htdocs/","http://localhost:80/",$url);
+                //Usar el de arriba solo cuando se prueba en Linux
                 ?>
 
                 <div class="mb-3 row">

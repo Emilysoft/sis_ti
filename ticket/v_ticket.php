@@ -73,8 +73,9 @@ $resultado->execute();
         </tr><?php } ?>
         </tbody>
     </table>
+    <a href="../init.php" class="btn btn-success">Volver</a>
 </div>
-<a href="../init.php" class="btn btn-success">Volver</a>
+
 </body>
 </html>
 

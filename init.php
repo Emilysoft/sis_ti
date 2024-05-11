@@ -21,15 +21,14 @@
      <div class="row">
          <div class="col-md-2"></div>
         <div class="container col-md-8">
-            <a href="usuario/registro_usuario.php" class="btn btn-success">crear usuario</a>
+            <a href="registro/registro_usuario.php" class="btn btn-success">crear usuario</a>
             <a href="ticket/ingreso_ticket.php" class="btn btn-danger">Nuevo ticket</a>
             <a href="usuario/usuarios.php" class="btn btn-warning">Mantenedor de usuarios</a>
-            <a href="ticket/v_ticket.php" class="btn btn-default"> ticket</a>
+            <a href="ticket/v_ticket.php" class="btn btn-primary"> ticket</a>
+            <a href="login/login.php" class="btn btn-success">Login</a>
         </div>
          <div class="col-md-2"></div>
      </div>
-
-
 </body>
 </html>
 
