@@ -10,11 +10,13 @@
     $tipo_usuario = 1;
     $estado = 1;
 
+    $password2 = password_hash($password, PASSWORD_DEFAULT);
+
     try{
 
     $insert='INSERT INTO usuario VALUES (null, :username, :nombre, :apellido, :email, :password, :tipo_usuario, :estado)';
     $sentencia = $conexion->prepare($insert);
-    $sentencia->execute(array(':username'=>$username,':nombre'=>$name,':apellido'=>$lastname,':email'=>$email,':password'=>$password, ':tipo_usuario'=>$tipo_usuario ,':estado'=>$estado));
+    $sentencia->execute(array(':username'=>$username,':nombre'=>$name,':apellido'=>$lastname,':email'=>$email,':password'=>$password2, ':tipo_usuario'=>$tipo_usuario ,':estado'=>$estado));
 
 
 
@@ -31,7 +33,7 @@
     }else
     {
 
-        header("location: usuarios.php");
+    header("location: usuarios.php");
 
     }
 
