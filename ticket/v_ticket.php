@@ -56,6 +56,7 @@ $resultado->execute();
             <td>Numero Ticket</td>
             <td>Usuario</td>
             <td>Fecha</td>
+            <td>Asunto</td>
             <td>prioridad</td>
             <td>estado</td>
             <td></td>
@@ -77,6 +78,7 @@ $resultado->execute();
 
                 ?></td>
             <td><?php echo $row['fecha_ticket']?></td>
+            <td><?php echo $row['asunto']?></td>
             <td><?php echo $row['prioridad']   ?></td>
             <td><?php echo $row['estado']   ?></td>
             <td><a href="t_detalle.php?id=<?php echo $row['id_ticket']?>" class="btn btn-success">Detalle</a></td>

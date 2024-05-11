@@ -13,7 +13,6 @@ $consulta2 = "SELECT *FROM usuario WHERE id_user = :id_user";
 $proceso2 = $conexion->prepare($consulta2);
 $proceso2->execute(array('id_user' => $resultado["id_user"]));
 $resultado2 = $proceso2->fetch();
-
 ?>
 
 
