@@ -51,11 +51,11 @@ $resultado->execute();
 
 <div class="container">
     <table id="example" name="usuarios" class="display table table-striped" cellspacing="0" width="100%">
-        <thead>
+        <thead class=" table table-striped table-dark">
         <tr class="active">
-            <td>id ticket</td>
-            <td>id usuario</td> <!-- Cambiar por el nombre del usuario -->
             <td>Numero Ticket</td>
+            <td>Usuario</td>
+            <td>Fecha</td>
             <td>prioridad</td>
             <td>estado</td>
             <td></td>
@@ -64,9 +64,19 @@ $resultado->execute();
         <tbody>
         <?php foreach ($resultado as $row)  {   ?>
         <tr>
-            <td><?php echo $row['id_ticket']   ?></td>
-            <td><?php echo $row['id_user']   ?></td>
             <td><?php echo $row['n_ticket']  ?></td>
+            <td><?php
+                $consulta2 = "SELECT *FROM usuario WHERE id_user = :id_user";
+                $proceso2 = $conexion->prepare($consulta2);
+                $proceso2->execute(array('id_user' => $row['id_user']));
+                $resultado2 = $proceso2->fetch();
+
+
+                    echo $resultado2['nombre']." ".$resultado2['apellido'];
+
+
+                ?></td>
+            <td><?php echo $row['fecha_ticket']?></td>
             <td><?php echo $row['prioridad']   ?></td>
             <td><?php echo $row['estado']   ?></td>
             <td><a href="t_detalle.php?id=<?php echo $row['id_ticket']?>" class="btn btn-success">Detalle</a></td>

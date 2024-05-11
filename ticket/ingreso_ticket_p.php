@@ -1,9 +1,11 @@
 <?php
 require("../conect/conexion.php");
 
-$id_usuario = 7;
+$id_usuario = 5;
 $n_ticket = random_int(1,9).date("Ys");;
 $incidencia = $_POST["incidencia"];
+$asunto = $_POST["asunto"];
+$fecha = date("Y-m-d");
 
 // ****************  IMAGEN *******************
 $img = $_FILES["file"]["name"];
@@ -30,9 +32,9 @@ $prioridad = $_POST["prioridad"];
 $estado = "activo";
 
 try {
-    $insert='INSERT INTO ticket VALUES (null, :id_user, :n_ticket, :incidencia, :img, :prioridad, :estado)';
+    $insert='INSERT INTO ticket VALUES (null, :id_user, :n_ticket,:fecha_ticket,:asunto , :incidencia, :img, :prioridad, :estado)';
     $sentencia = $conexion->prepare($insert);
-    $sentencia->execute(array(':id_user'=>$id_usuario, ':n_ticket'=> $n_ticket ,':incidencia'=>$incidencia,':img'=>$img2,':prioridad'=>$prioridad,':estado'=>$estado));
+    $sentencia->execute(array(':id_user'=>$id_usuario, ':n_ticket'=> $n_ticket ,':fecha_ticket'=>$fecha ,':asunto'=>$asunto ,':incidencia'=>$incidencia,':img'=>$img2,':prioridad'=>$prioridad,':estado'=>$estado));
 
 } catch (PDOException $e) {
     echo "Error: " . $e->getMessage();

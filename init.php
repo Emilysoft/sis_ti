@@ -26,6 +26,7 @@
             <a href="usuario/usuarios.php" class="btn btn-warning">Mantenedor de usuarios</a>
             <a href="ticket/v_ticket.php" class="btn btn-primary"> ticket</a>
             <a href="login/login.php" class="btn btn-success">Login</a>
+            <a href="user/principal_user.php" class="btn btn-warning">principal user</a>
         </div>
          <div class="col-md-2"></div>
      </div>

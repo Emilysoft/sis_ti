@@ -18,7 +18,7 @@ if($_POST) {
     if($resultado!=false) {
 
         echo "Datos correctos oniichan";
-        header("location:../user/menu.php");
+        header("location:../user/principal_user.php");
 
     }else
     {

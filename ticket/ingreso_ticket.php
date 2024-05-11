@@ -26,6 +26,12 @@
     <div class="col-md-6">
         <form action="ingreso_ticket_p.php" method="post" enctype="multipart/form-data">
             <div class="row">
+
+                <div class="mb-3">
+                    <label for="incidencia" class="form-label">Asunto</label>
+                    <input type="text" class="form-control" placeholder="Ingrese el asunto" name="asunto" id="asunto" minlength="1" maxlength="50" required>
+                </div>
+
                 <div class="mb-3">
                     <label for="incidencia" class="form-label">Incidencia</label>
                     <textarea class="form-control" id="incidencia" name="incidencia"  cols="30" rows="10"></textarea>

@@ -27,6 +27,7 @@ $resultado2 = $proceso2->fetch();
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="../js/bootstrap.js"></script>
     <title>Detalle de Ticket</title>
 </head>
@@ -47,7 +48,8 @@ $resultado2 = $proceso2->fetch();
             <div class="col-md-1"></div>
 
 
-            <div class="col-md-10">
+            <div class="col-md-10 div_contenedor">
+
                 <div class="mb-3 row">
                     <label for="id_ticket" class="col-sm-2 col-form-label">Nº de Ticket</label>
                     <div class="col-sm-10">
@@ -70,11 +72,26 @@ $resultado2 = $proceso2->fetch();
                 </div>
 
                 <div class="mb-3 row">
-                    <label for="id_ticket" class="col-sm-2 col-form-label">Nombre de Solicitante</label>
+                    <label for="fecha_ticket" class="col-sm-2 col-form-label">Fecha de ticket</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="fecha_ticket" value="<?php echo $resultado["fecha_ticket"]?>" readonly disabled>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="id_ticket" class="col-sm-2 col-form-label">Solicitante</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="id_ticket" value="<?php echo $resultado2["nombre"] ." ". $resultado2["apellido"]?>" disabled readonly>
                     </div>
                 </div>
+
+                <div class="mb-3 row">
+                    <label for="asunto" class="col-sm-2 col-form-label">Asunto</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="asunto" value="<?php echo $resultado["asunto"] ?>" disabled readonly>
+                    </div>
+                </div>
+
 
                 <div class="mb-3 row">
                     <label for="id_ticket" class="col-sm-2 col-form-label">Incidencia</label>
@@ -105,18 +122,19 @@ $resultado2 = $proceso2->fetch();
                     </div>
                 </div>
 
-                <div class="mb-3 row">
+                <div class="mb-3 row ">
                     <label for="id_ticket" class="col-sm-2 col-form-label">Estado</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="id_ticket" value="<?php echo $resultado["estado"]?>" disabled readonly>
                     </div>
                 </div>
+                <div class="float-end">
+                    <a href="v_ticket.php" class="btn btn-success div_contenedor">Volver</a>
+                    <a href="#" class="btn btn-primary div_contenedor">Resolver</a>
+                </div>
+
             </div>
             <div class="col-md-1"></div>
-
-
-
-
         </div>
     </div>
 
