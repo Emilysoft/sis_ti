@@ -11,7 +11,9 @@
     <title>Registro de Usuarios</title>
 </head>
 <body>
-
+<?php
+require_once('../user/menu_user.php');
+?>
 
 <div class="div_header page-header">
     <div class="row">

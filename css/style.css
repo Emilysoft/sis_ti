@@ -17,16 +17,13 @@
      margin-bottom: 30px;
  }
 
-.contenedor_padre{
+.contenedor_padrex{
     max-width: 90%;
     display: flex;
     flex-wrap: wrap;
 }
 
-
-.btn-custom {
-    margin: 10px auto;
-    display: block;
-    width: 10px; /* Ajusta el ancho según lo necesites */
-    font-size: 18px; /* Ajusta el tamaño del texto según lo necesites */
+.div_contenedor_left{
+    margin-left: 50px;
 }
+

@@ -31,7 +31,9 @@ $resultado2 = $proceso2->fetch();
     <title>Detalle de Ticket</title>
 </head>
 <body>
-
+<?php
+require_once('../user/menu_user.php');
+?>
     <div class="div_header page-header">
         <div class="row">
             <div class="col-md-3"></div>

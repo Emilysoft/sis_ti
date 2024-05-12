@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/bootstrap.css">
+
     <script src="../js/bootstrap.js"></script>
     <link rel="stylesheet" href="../css/style.css">
 
@@ -13,17 +14,20 @@
     <title>Nuevo Ticket</title>
 </head>
 <body>
+<?php
+require_once('../user/menu_user.php');
+?>
 <div class="div_header page-header">
     <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6 text-center"><h1 class="titulo">Nuevo Ticket</h1></div>
-        <div class="col-md-3"></div>
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 text-center"><h1 class="titulo">Nuevo Ticket</h1></div>
+        <div class="col-lg-3"></div>
     </div>
 </div>
 
 <div class="row">
-    <div class="col-md-3"></div>
-    <div class="col-md-6">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
         <form action="ingreso_ticket_p.php" method="post" enctype="multipart/form-data">
             <div class="row">
 
@@ -56,7 +60,7 @@
         </form>
     </div>
 
-    <div class="col-md-3"></div>
+    <div class="col-lg-3"></div>
 </div>
 
 
