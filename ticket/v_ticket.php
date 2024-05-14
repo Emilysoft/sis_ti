@@ -72,9 +72,7 @@ $resultado->execute();
                 $proceso2->execute(array('id_user' => $row['id_user']));
                 $resultado2 = $proceso2->fetch();
 
-
                     echo $resultado2['nombre']." ".$resultado2['apellido'];
-
 
                 ?></td>
             <td><?php echo $row['fecha_ticket']?></td>

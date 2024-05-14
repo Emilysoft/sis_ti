@@ -1,11 +1,17 @@
 <?php
+session_start();
+if(!$_SESSION['id_user'])
+{
+    header('Location: ../login/login.php');
+}
 require_once ('../conect/conexion.php');
-$id_user= 5;
+$id_user= $_SESSION['id_user'];
 $estado = "activo";
 $consulta2 = "SELECT *FROM ticket WHERE id_user = :id_user and estado = :estado";
 $resultado2 = $conexion->prepare($consulta2);
 $resultado2->execute(array('id_user' => $id_user, 'estado' => $estado));
 ?>
+
 
 <!doctype html>
 <html lang="en">
